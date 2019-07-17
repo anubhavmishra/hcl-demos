@@ -44,6 +44,8 @@ action "terraform-plan" {
   secrets = [
     "GITHUB_TOKEN",
     "TF_ACTION_TFE_TOKEN",
+    "AWS_ACCESS_KEY_ID",
+    "AWS_SECRET_ACCESS_KEY",
   ]
   env = {
     TF_ACTION_WORKING_DIR = "./terraform-hcl"
